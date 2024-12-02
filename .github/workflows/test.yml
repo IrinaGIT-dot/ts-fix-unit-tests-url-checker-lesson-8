@@ -28,6 +28,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Run tests
+      # Run url checker tests
       - name: Run tests
-        run: npx jest
+        run: npx jest tests/url-checker.test.ts
+
+      # Run password strength checker tests
+      - name: Run tests
+        run: npx jest tests/password-strength-checker.test.ts
